@@ -1,0 +1,119 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>at.mukprojects.exclycore</groupId>
+	<artifactId>exclycore</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<name>ExclyCore</name>
+	<description>
+	ExclyCore is an Java library and can be used as an helper for the Apache POI library.
+	Apache POI is an Java API for Microsoft Documents. ExclyCore improves the extraction
+	of data from Excel files and simplifies the processes of creating a new Excel workbook.
+	</description>
+
+	<url>https://github.com/mukprojects/ExclyCore</url>
+
+	<licenses>
+		<license>
+			<name>GNU General Public License Version 3</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git@github.com:mukprojects/ExclyCore.git</connection>
+		<developerConnection>scm:git:git@github.com:mukprojects/ExclyCore.git</developerConnection>
+		<url>https://github.com/mukprojects/ExclyCore</url>
+	</scm>
+
+	<organization>
+		<name>MuK Projects</name>
+		<url>www.mukprojects.at</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>Mathias Markl</name>
+			<email>mathias@mukprojects.at</email>
+			<organization>MuK Projects</organization>
+			<organizationUrl>www.mukprojects.at</organizationUrl>
+		</developer>
+		<developer>
+			<name>Kerrim Abdelhamed</name>
+			<email>kerrim@mukprojects.at</email>
+			<organization>MuK Projects</organization>
+			<organizationUrl>www.mukprojects.at</organizationUrl>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.finalName>${project.artifactId}-${project.version}</project.build.finalName>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.11</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.build.finalName}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<skipTests>false</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
