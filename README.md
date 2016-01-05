@@ -140,7 +140,7 @@ Download JAR from [here](https://github.com/mukprojects/ExclyCore/tree/master/di
 
 ```xml
 	<dependency>
-		<groupId>at.mukprojects.exclycore</groupId>
+		<groupId>at.mukprojects</groupId>
 		<artifactId>exclycore</artifactId>
 		<version>1.0.0</version>
 	</dependency>
