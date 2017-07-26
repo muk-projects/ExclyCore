@@ -1,3 +1,9 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Build Status](https://travis-ci.org/muk-projects/ExclyCore.svg?branch=master)](https://travis-ci.org/muk-projects/ExclyCore)
+[![codecov](https://codecov.io/gh/muk-projects/ExclyCore/branch/master/graph/badge.svg)](https://codecov.io/gh/muk-projects/ExclyCore)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/532c896527fd435d93442f441c125c65)](https://www.codacy.com/app/keshrath/Giphy4J?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=keshrath/Giphy4J&amp;utm_campaign=Badge_Grade)
+
+
 # ExclyCore
 
 ExclyCore is an Java library and can be used as an helper for the Apache POI library. Apache POI is an Java API for Microsoft Documents. ExclyCore improves the extraction of data from Excel files and simplifies the processes of creating a new Excel workbook. 
