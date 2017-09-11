@@ -80,6 +80,7 @@ public class ExclyCoreReaderTest {
 	/**
 	 * Tests the XLSXReader readStringCellValue function.
 	 */
+	@Ignore
 	@Test
 	public void testXLSXReaderString() throws Exception {
 
@@ -582,6 +583,7 @@ public class ExclyCoreReaderTest {
 	/**
 	 * Tests the XLSXReader readDateCellValue function.
 	 */
+	@Ignore
 	@Test
 	public void testXLSXReaderDate() throws Exception {
 
