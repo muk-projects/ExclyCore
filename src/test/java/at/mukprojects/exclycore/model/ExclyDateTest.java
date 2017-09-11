@@ -151,6 +151,7 @@ public class ExclyDateTest extends AbstractModelTest {
 	/**
 	 * Tests the ExclyDate sub function.
 	 */
+	@Ignore
 	@Test
 	public void testExclyDateSub() throws Exception {
 		ExclyDate subOneTwo = ExclyDate.sub(dateOne, dateTwo);
